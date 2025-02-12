@@ -1,0 +1,97 @@
+    /* General Styling */
+    .styled-image {
+      margin-right: 10px;
+      /* Adds spacing between the images */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      /* Adds shadow effect */
+      border-radius: 5px;
+      /* Optional: adds rounded corners */
+    }
+
+    .styled-image:last-child {
+      margin-right: 0;
+      /* Ensures no extra margin for the last image */
+    }
+
+    .small-rectangle,
+    .scaled-chart1,
+    .scaled-chart2,
+    .scaled-chart3,
+    .scaled-table {
+      width: 100%;
+      /* Full width for responsiveness */
+      max-width: 1300px;
+      /* Limit max width */
+      height: auto;
+      /* Maintain aspect ratio */
+      object-fit: cover;
+      /* Ensures the image fits well inside the rectangle */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      /* Adds shadow */
+      border-radius: 5px;
+      /* Optional: smooth corners */
+      margin: 10px auto;
+      /* Center and add spacing */
+    }
+
+    /* Specific Breakpoints */
+    @media (max-width: 1200px) {
+
+      .small-rectangle,
+      .scaled-chart1,
+      .scaled-chart2,
+      .scaled-chart3,
+      .scaled-table {
+        max-width: 1100px;
+        height: auto;
+        /* Adjust height dynamically */
+      }
+    }
+
+    @media (max-width: 992px) {
+
+      .small-rectangle,
+      .scaled-chart1,
+      .scaled-chart2,
+      .scaled-chart3,
+      .scaled-table {
+        max-width: 900px;
+        height: auto;
+      }
+
+      .styled-image {
+        margin-right: 5px;
+        /* Reduce spacing on smaller screens */
+      }
+    }
+
+    @media (max-width: 768px) {
+
+      .small-rectangle,
+      .scaled-chart1,
+      .scaled-chart2,
+      .scaled-chart3,
+      .scaled-table {
+        max-width: 600px;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 576px) {
+
+      .small-rectangle,
+      .scaled-chart1,
+      .scaled-chart2,
+      .scaled-chart3,
+      .scaled-table {
+        max-width: 100%;
+        /* Full width for very small screens */
+        height: auto;
+      }
+
+      .styled-image {
+        margin: 5px auto;
+        /* Center images with smaller spacing */
+        display: block;
+      }
+    }

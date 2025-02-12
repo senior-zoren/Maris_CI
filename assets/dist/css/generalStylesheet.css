@@ -1,0 +1,33 @@
+/* Background Image with Opacity and Blur */
+/* body {
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    content: "";
+    background: rgba(0, 0, 0, 0.3); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+.navbar-info {
+    background-color: rgba(253, 253, 253, 0.8) !important;
+}
+
+.main-sidebar {
+    background-color: rgba(248, 249, 250, 0.9);
+} */
+
+.brand-text {
+    color: #28a745 !important;
+}
+
+/* .user-image {
+    border: 2px solid #40e0d0; 
+} */
+
+/* .small-box .icon > i {
+    color: #fff !important;
+} */

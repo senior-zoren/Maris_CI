@@ -1,0 +1,106 @@
+#calendar {
+  width: 100%;
+  max-width: 400px;
+  background-color: #28a745;
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#year-display {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.months-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.month {
+  padding: 15px;
+  background-color: #28a745;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.month:hover {
+  background-color: #e83e8c;
+}
+
+#analytics-display {
+  margin-top: 20px;
+}
+
+#prev-year, #next-year {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+#prev-year:hover, #next-year:hover {
+  color: #e83e8c;
+}
+
+@media (max-width: 600px) {
+  #calendar {
+    padding: 15px;
+  }
+
+  #calendar-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #year-display {
+    font-size: 20px;
+  }
+
+  .months-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .month {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  #prev-year, #next-year {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .months-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .month {
+    padding: 14px;
+  }
+}
+
+@media (min-width: 901px) {
+  .months-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

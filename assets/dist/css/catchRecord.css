@@ -1,0 +1,11 @@
+.chart-container {
+    width: 100%;
+    max-width: 800px; /* Adjust the max width as needed */
+    height: 500px; /* Adjust the height as needed */
+    margin: 0 auto; /* Center the chart container */
+}
+
+#catchChart {
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,42 @@
+
+
+/* Table container with fixed headers */
+.table-wrapper {
+  flex: 1 1 auto; /* Allow the table wrapper to grow and shrink */
+  overflow: auto;
+  border: 1px solid #ddd;
+  margin: 0 auto; /* Center the table wrapper horizontally */
+  display: block; /* Ensure block display to center with margin auto */
+  box-sizing: border-box; /* Include padding and border in element's width and height */
+}
+
+.table-header {
+  background-color: #f8f9fa;
+}
+
+.table-container {
+  max-height: 760px; /* Adjust the height as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  width: 100%; /* Ensure container takes full width */
+}
+
+.table-container table {
+  width: 100%; /* Ensure table width matches the container width */
+  border-collapse: collapse;
+  table-layout: fixed; /* Ensure table is responsive and cells are evenly distributed */
+}
+
+.table-container th,
+.table-container td {
+  padding: 10px;
+  text-align: left;
+  word-wrap: break-word; /* Ensure long text wraps within the cell */
+}
+
+.table-container th {
+  position: sticky;
+  top: 0;
+  background-color: #f8f9fa;
+  z-index: 2; /* Ensures header stays above content */
+}
