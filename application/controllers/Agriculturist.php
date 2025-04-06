@@ -435,6 +435,6 @@ class Agriculturist extends CI_Controller
 
   public function farmerDash()
   {
-    echo "this is farmer dash";
+    $this->load->view('user/farmer/farmerdashpage');
   }
 }

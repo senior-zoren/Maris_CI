@@ -4,7 +4,7 @@ let dashboardType = 'fisher';
 document.addEventListener("DOMContentLoaded", function () {
   console.log("Page loaded: initializing calendar and loading analytics data.");
 
-  if (window.location.href.includes('../application/views/user/fisherDashPage.php')) {
+  if (window.location.href.includes('http://localhost:3000/agriculturist/fisherDash')) {
     dashboardType = 'fisher';
   } else {
     dashboardType = 'farmer';
@@ -60,9 +60,9 @@ function updateChartData(year, month) {
   let url;
 
   if (dashboardType === 'fisher') {
-    url = '/dashboard/fetchFisherDashboardData'; 
+    url = 'http://localhost:3000/agriculturist/fisherDash'; 
   } else if (dashboardType === 'farmer') {
-    url = '/dashboard/fetchFarmerDashboardData'; 
+    url = 'http://localhost:3000/agriculturist/farmerDash'; 
   } else {
     console.error('Invalid dashboard type specified:', dashboardType);
     return;
